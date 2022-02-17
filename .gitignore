@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Comentamos el archivo de cambio de color.
+.vscode
