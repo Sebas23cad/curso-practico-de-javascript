@@ -96,7 +96,7 @@ function calcularAreaTriangulo () {
 // circulo
 
 function calcularPerimetroCirculo () {
-    const input = document.getElementById("inputTriangulo");
+    const input = document.getElementById("inputCirculo");
     const value = input.value;
 
     const perimetro = perimetroCirculo(value);
@@ -104,7 +104,7 @@ function calcularPerimetroCirculo () {
 }
 
 function calcularAreaCirculo () {
-    const input = document.getElementById("inputTriangulo");
+    const input = document.getElementById("inputCirculo");
     const value = input.value;
 
     const area = areaCirculo(value);
@@ -112,9 +112,37 @@ function calcularAreaCirculo () {
 }
 
 function calcularDiametroCirculo () {
-    const input = document.getElementById("inputTriangulo");
+    const input = document.getElementById("inputCirculo");
     const value = input.value;
 
     const diametro = diametroCirculo(value);
     alert(diametro);
 }
+
+// Triangulo isoseles.
+
+function isoseles (lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base){
+        alert("Es un triangulo isoseles");
+
+        return (Math.sqrt((lado1 * lado1) - (base * base) / 4));
+    }
+    else {
+        alert("No es un triangulo isoseles");
+
+        return "Es otro tipo de triangulo"; 
+    }
+};
+
+function alturaTriangulo () {
+    const inputLado = document.getElementById("inputIsoselesLado");
+    const valueLado = Number(inputLado.value);
+    const inputLado2 = document.getElementById("inputIsoselesLado2");
+    const valueLado2 = Number(inputLado2.value);
+    const inputLongitud = document.getElementById("inputIsoselesLongitud");
+    const valueLongitud = Number(inputLongitud.value);
+
+    const altura = isoseles(valueLado, valueLado2, valueLongitud);
+    alert(altura);
+};
+
