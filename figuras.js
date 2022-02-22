@@ -71,18 +71,25 @@ function calcularAreaCuadrado () {
 // Triangulo.
 
 function calcularPerimetroTriangulo () {
-    const input = document.getElementById("inputTriangulo");
-    const value = input.value;
+    const inputLado1 = document.getElementById("inputTrianguloLado1");
+    const valueLado1 = Number(inputLado1.value);
+    const inputLado2 = document.getElementById("inputTrianguloLado2");
+    const valueLado2 = Number(inputLado2.value);
+    const inputBase = document.getElementById("inputTrianguloBase");
+    const valueBase = Number(inputBase.value);
 
-    const perimetro = perimetroTriangulo(value, value, value);
+    const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase);
     alert(perimetro);
 };
 
 function calcularAreaTriangulo () {
-    const input = document.getElementById("inputTriangulo");
-    const value = input.value;
+    const inputBase = document.getElementById("inputTrianguloBase");
+    const valueBase = inputBase.value;
+    const inputAltura = document.getElementById("inputTrianguloAltura");
+    const valueAltura = inputAltura.value;
+    
 
-    const area = areaTriangulo(value, value);
+    const area = areaTriangulo(valueBase, valueAltura);
     alert(area);
 };
 
