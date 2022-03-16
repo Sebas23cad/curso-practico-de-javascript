@@ -33,4 +33,6 @@ Pueden contactarme por medio de instagran y linkeding:
 https://www.instagram.com/jc.sebas_1/?hl=es-la
 www.linkedin.com/in/jcs1c
 
+Ver el proyecto: https://sebas23cad.github.io/curso-practico-de-javascript/
+
 Un saludo y espero que tengan exito en todo.
